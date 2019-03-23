@@ -9,8 +9,8 @@ int main(int argc, char *argv[]){
 	string line;
 	string correct;
 
-	string input = "../traces/short_trace1.txt";
-	string output;
+	string input = "../../traces/short_trace1.txt";
+	string output = "output.txt";
 	int gottems = 0;
 	int totals = 0;
 
@@ -574,7 +574,7 @@ int main(int argc, char *argv[]){
 	ifstream infile5h(input);
 
 	while(infile5h >> std::hex >> line >> correct){
-		if(greg.gShare(greg.hex2bi(line), correct, 10))[
+		if(greg.gShare(greg.hex2bi(line), correct, 10)){
 			gottems += 1;
 		}
 		totals += 1;
@@ -597,12 +597,12 @@ int main(int argc, char *argv[]){
 
 	while(infile5i >> std::hex >> line >> correct){
 		if(greg.gShare(greg.hex2bi(line), correct, 11)){
-			gottems;
+			gottems+=1;
 		}
 		totals += 1;
 	}
 
-	myfile << gottems << "," totals << ";\n";
+	myfile << gottems << "," << totals << ";\n";
 
 	gottems = 0;
 	totals = 0;
@@ -629,7 +629,7 @@ int main(int argc, char *argv[]){
 		greg.tTable.push_back(10);
 	}
 
-	ifstream infile6("../traces/short_trace1.txt");
+	ifstream infile6(input);
 
 
 	while(infile6 >> std::hex >> line >> correct){
@@ -642,7 +642,7 @@ int main(int argc, char *argv[]){
 	printf("\ngottems: %d\n", gottems);
 	printf("totals: %d\n", totals);
 
-	myfile << gottems << "," totals << ";";
+	myfile << gottems << "," << totals << ";";
 
 	return 0;
 
