@@ -1,7 +1,7 @@
 all: driver
 
 driver: driver.o work.o
-	g++ driver.o work.o -o driver.exe
+	g++ driver.o work.o -o driver
 
 driver.o: driver.cpp
 	g++ -g -c driver.cpp

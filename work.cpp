@@ -171,7 +171,7 @@ bool work::gShare(string line, string correct, int ghrL){
 		}
 	}
 
-	int mo = pow(2, 11);
+	int mo = pow(2, 12);
 	index = index % mo;
 
 	hor = index^(this->ghr);

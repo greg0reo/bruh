@@ -1,16 +1,17 @@
 #include "work.h"
 #include <string>
 #include <iostream>
-
+#include <fstream>
 using namespace std;
 
 int main(int argc, char *argv[]){
 
 	string line;
 	string correct;
-
-	string input = "../../traces/short_trace1.txt";
-	string output = "output.txt";
+	string temporary = argv[1];
+	string input = "../../traces/";
+	string output = argv[2];
+	input.append(temporary);
 	int gottems = 0;
 	int totals = 0;
 
@@ -644,6 +645,7 @@ int main(int argc, char *argv[]){
 
 	myfile << gottems << "," << totals << ";";
 
+	myfile.close();
 	return 0;
 
 
