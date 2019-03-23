@@ -353,3 +353,143 @@ string work::hex2bi(string line){
 	return answer;
 }
 
+
+
+
+
+bool work::EC(string line, string correct){
+	addone();
+
+	string temp;
+	temp = line.substr(line.size()-11, line.size()); //takes ghrL right most bits
+
+	int index;
+/*	for(int i = 0; i < 11; i++){
+		if(temp.substr(temp.size()-i, 1) == "1"){
+			index += (2^(i-1));
+		}
+	}
+*/
+	string car;
+	for(int i = 0; i < 11; i++){
+		car = line.at(31-i);
+		if(car == "1"){
+			index += pow(2, i);
+		}
+	}
+
+
+//	int tempest = stoi(temp);
+
+	int hor;
+	hor = index^ghr;
+
+	int selector = tTable[index];
+	if(correct == "T"){
+		if(gTable[hor] > 90 && dubTable[index] < 90){
+			if(tTable[index] == 01){
+				tTable[index] = 00;
+			}
+			if(tTable[index] == 10){
+				tTable[index] = 01;
+			}
+			if(tTable[index] == 11){
+				tTable[index] = 10;
+			}
+			if(tTable[index] == 100){
+				tTable[index] = 11;
+			}
+			if(tTable[index] == 101){
+				tTable[index] = 100;
+			}
+			if(tTable[index] == 110){
+				tTable[index] = 101;
+			}
+			if(tTable[index] == 111){
+				tTable[index] = 110;
+			}
+		}
+		if(gTable[hor] < 90 && dubTable[index] > 90){
+			if(tTable[index] == 00){
+				tTable[index] = 01;
+			}
+			if(tTable[index] == 01){
+				tTable[index] = 10;
+			}
+			if(tTable[index] == 10){
+				tTable[index] = 11;
+			}
+			if(tTable[index] == 11){
+				tTable[index] = 100;
+			}
+			if(tTable[index] == 100){
+				tTable[index] = 101;
+			}
+			if(tTable[index] == 101){
+				tTable[index] = 110;
+			}
+			if(tTable[index] == 110){
+				tTable[index] = 111;
+			}
+		}
+	}
+
+	if(correct == "NT"){
+		if(gTable[hor] < 90 && dubTable[index] > 90){
+			if(tTable[index] == 01){
+				tTable[index] = 00;
+			}
+			if(tTable[index] == 10){
+				tTable[index] = 01;
+			}
+			if(tTable[index] == 11){
+				tTable[index] = 10;
+			}
+			if(tTable[index] == 100){
+				tTable[index] = 11;
+			}
+			if(tTable[index] == 101){
+				tTable[index] = 100;
+			}
+			if(tTable[index] == 110){
+				tTable[index] = 101;
+			}
+			if(tTable[index] == 111){
+				tTable[index] = 110;
+			}
+		}
+		if(gTable[hor] >9 && dubTable[index] < 9){
+			if(tTable[index] == 00){
+				tTable[index] = 01;
+			}
+			if(tTable[index] == 01){
+				tTable[index] = 10;
+			}
+			if(tTable[index] == 10){
+				tTable[index] = 11;
+			}
+			if(tTable[index] == 11){
+				tTable[index] = 100;
+			}
+			if(tTable[index] == 100){
+				tTable[index] = 101;
+			}
+			if(tTable[index] == 101){
+				tTable[index] = 110;
+			}
+			if(tTable[index] == 110){
+				tTable[index] = 111;
+			}
+		}
+	}
+
+	if(selector > 90){
+		return bimodal(line, correct, 11);
+	}
+	if(selector < 90){
+		return gShare(line, correct, 11);
+	}
+
+
+
+}
