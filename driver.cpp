@@ -32,8 +32,6 @@ int main(int argc, char *argv[]){
 //	printf("%s", correct);
 //	printf("\n\n");
 
-	printf("gottems: %d\n" , gottems);
-	printf("totals: %d\n", totals);
 
 	ofstream myfile;
 	myfile.open(output);
@@ -54,8 +52,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	printf("\ngottems: %d\n" , gottems);
-	printf("totals: %d\n", totals);
+
 
 	myfile << gottems << "," << totals << ";\n" ;
 
@@ -81,8 +78,7 @@ int main(int argc, char *argv[]){
 	}
 
 //	printf("%d", greg.correct);
-	printf("\ngottems: %d\n" , gottems);
-	printf("totals: %d\n", totals);
+
 
 	myfile << gottems << "," << totals << "; ";
 
@@ -251,8 +247,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	printf("\ngottems: %d\n", gottems);
-	printf("totals: %d\n", totals);
+
 
 	myfile << gottems << "," << totals << "; ";
 
@@ -427,8 +422,6 @@ int main(int argc, char *argv[]){
 		i++;
 */	}
 
-	printf("\ngottems: %d\n", gottems);
-	printf("totals: %d\n", totals);
 
 	myfile << gottems << "," << totals << "; ";
 
