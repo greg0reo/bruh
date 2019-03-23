@@ -83,7 +83,7 @@ int main(int argc, char *argv[]){
 	printf("\ngottems: %d\n" , gottems);
 	printf("totals: %d\n", totals);
 
-	myfile << gottems << "," << totals << ";";
+	myfile << gottems << "," << totals << "; ";
 
 
 	gottems = 0;
@@ -122,7 +122,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	myfile << gottems << "," << totals << ";";
+	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
 	totals = 0;
@@ -141,7 +141,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	myfile << gottems << "," << totals << ";";
+	myfile << gottems << "," << totals << "; ";
 
 	gottems =0;
 	totals = 0;
@@ -160,7 +160,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	myfile << gottems << "," << totals << ";";
+	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
 	totals = 0;
@@ -178,7 +178,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	myfile << gottems << "," << totals << ";";
+	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
 	totals = 0;
@@ -407,13 +407,14 @@ int main(int argc, char *argv[]){
 		greg.gTable.push_back(0);
 	}
 
-	ifstream infile5("../traces/short_trace1.txt");
+	ifstream infile5(input);
 
 	greg.ghr = 0;
 //	int i = 0;
+	greg.ghrSize = 3;
 
 	while(infile5 >> std::hex >> line >> correct){
-		if(greg.gShare(greg.hex2bi(line), correct, 4)){
+		if(greg.gShare(greg.hex2bi(line), correct, 3)){
 			gottems += 1;
 		}
 		totals += 1;
@@ -428,8 +429,195 @@ int main(int argc, char *argv[]){
 	printf("\ngottems: %d\n", gottems);
 	printf("totals: %d\n", totals);
 
+	myfile << gottems << "," << totals << "; ";
+
 	gottems = 0;
 	totals = 0;
+
+
+
+
+	for(int i = 0; i < 2048; i++){
+		greg.gTable[i] = 0;
+	}
+	greg.ghrSize = 4;
+	greg.ghr = 0;
+
+	ifstream infile5b(input);
+
+	while(infile5b >> std::hex >> line >> correct){
+		if(greg.gShare(greg.hex2bi(line), correct, 4)){
+		gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems =0;
+	totals = 0;
+
+
+
+	for(int i = 0; i < 2048; i++){
+		greg.gTable[i] = 0;
+	}
+	greg.ghrSize = 5;
+	greg.ghr =0;
+
+	ifstream infile5c(input);
+
+	while(infile5c >> std::hex >> line >> correct){
+		if(greg.gShare(greg.hex2bi(line), correct, 5)){
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems = 0;
+	totals = 0;
+
+
+	for(int i = 0; i < 2048; i++){
+		greg.gTable[i] = 0;
+	}
+	greg.ghrSize = 6;
+	greg.ghr = 0;
+
+	ifstream infile5d(input);
+
+	while(infile5d >> std::hex >> line >> correct){
+		if(greg.gShare(greg.hex2bi(line), correct, 6)){
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems = 0;
+	totals = 0;
+
+
+	for(int i = 0; i < 2048; i++){
+		greg.gTable[i] = 0;
+	}
+	greg.ghrSize = 7;
+	greg.ghr = 0;
+
+	ifstream infile5e(input);
+
+	while(infile5e >> std::hex >> line >> correct){
+		if(greg.gShare(greg.hex2bi(line), correct, 7)){
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems = 0;
+	totals = 0;
+
+
+	for(int i = 0; i < 2048; i++){
+		greg.gTable[i] = 0;
+	}
+
+	greg.ghrSize = 8;
+	greg.ghr = 0;
+
+	ifstream infile5f(input);
+
+	while(infile5f >> std::hex >> line >> correct){
+		if(greg.gShare(greg.hex2bi(line), correct, 8)){
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems = 0;
+	totals = 0;
+
+	for(int i = 0; i < 2048; i++){
+		greg.gTable[i] = 0;
+	}
+
+	greg.ghrSize = 9;
+	greg.ghr = 0;
+
+	ifstream infile5g(input);
+
+	while(infile5g >> std::hex >> line >> correct){
+		if(greg.gShare(greg.hex2bi(line), correct, 9)){
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems =0;
+	totals = 0;
+
+	for(int i = 0; i < 2048; i++){
+		greg.gTable[i] = 0;
+	}
+
+	greg.ghrSize = 10;
+	greg.ghr =0;
+
+	ifstream infile5h(input);
+
+	while(infile5h >> std::hex >> line >> correct){
+		if(greg.gShare(greg.hex2bi(line), correct, 10))[
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems =0;
+	totals = 0;
+
+
+	for(int i = 0; i < 2048; i++){
+		greg.gTable[i] = 0;
+	}
+
+	greg.ghrSize = 11;
+	greg.ghr =0;
+
+	ifstream infile5i(input);
+
+	while(infile5i >> std::hex >> line >> correct){
+		if(greg.gShare(greg.hex2bi(line), correct, 11)){
+			gottems;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," totals << ";\n";
+
+	gottems = 0;
+	totals = 0;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	//tour time
@@ -453,6 +641,8 @@ int main(int argc, char *argv[]){
 
 	printf("\ngottems: %d\n", gottems);
 	printf("totals: %d\n", totals);
+
+	myfile << gottems << "," totals << ";";
 
 	return 0;
 
