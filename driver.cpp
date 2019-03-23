@@ -196,7 +196,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	myfile << gottems << "," << totals << ";";
+	myfile << gottems << "," << totals << ";\n";
 
 	gottems =0;
 	totals = 0;
@@ -243,36 +243,161 @@ int main(int argc, char *argv[]){
 //	string mom;
 
 	while(infile4 >> std::hex >> line >> correct){
-//		printf("Do I get here?\n");
-//		mom = greg.hex2bi(line);
-//		printf("mom: %s\n", mom);
-//		printf("correct: %s\n", correct);
 
 		if(greg.bimodal(greg.hex2bi(line), correct, 4)){
 			gottems += 1;
 		}
 		totals += 1;
-
-//		cout << line << endl;
-//		cout << mom << endl;
-//		cout << correct << endl;
-
-
-
-//		bool ahhh = greg.gShare(mom, correct, 3);
-//		printf("ahhh?\n");
-//		if(ahhh){
-//			gottems += 1;
-//		}
-//		totals += 1;
-//		correct = "";
 	}
 
 	printf("\ngottems: %d\n", gottems);
 	printf("totals: %d\n", totals);
 
+	myfile << gottems << "," << totals << "; ";
+
 	gottems = 0;
 	totals = 0;
+
+
+	ifstream infile4b(input);
+
+	for(int i = 0; i < 2048; i++){
+		greg.dubTable[i]=0;
+	}
+
+	while(infile4b >> std::hex >> line >> correct){
+
+		if(greg.bimodal(greg.hex2bi(line), correct, 5)){
+			gottems+= 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems = 0;
+	totals = 0;
+
+
+	ifstream infile4c(input);
+
+	for(int i = 0; i < 2048; i++){
+		greg.dubTable[i] = 0;
+	}
+
+	while(infile4c >> std::hex >> line >> correct){
+
+		if(greg.bimodal(greg.hex2bi(line), correct, 7)){
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems = 0;
+	totals = 0;
+
+
+	ifstream infile4d(input);
+
+	for(int i = 0; i < 2048; i++){
+		greg.dubTable[i] = 0;
+	}
+
+	while(infile4d >> std::hex >> line >> correct){
+		if(greg.bimodal(greg.hex2bi(line), correct, 8)){
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems = 0;
+	totals = 0;
+
+
+	ifstream infile4e(input);
+
+	for(int i = 0; i < 2048; i++){
+		greg.dubTable[i] = 0;
+	}
+
+	while(infile4e >> std::hex >> line >> correct){
+		if(greg.bimodal(greg.hex2bi(line), correct, 9)){
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems = 0;
+	totals = 0;
+
+
+	ifstream infile4f(input);
+
+	for(int i = 0; i < 2048; i++){
+		greg.dubTable[i] = 0;
+	}
+
+	while(infile4f >> std::hex >> line >> correct){
+		if(greg.bimodal(greg.hex2bi(line), correct, 10)){
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << "; ";
+
+	gottems = 0;
+	totals = 0;
+
+
+	ifstream infile4g(input);
+
+	for(int i = 0; i < 2048; i++){
+		greg.dubTable[i] = 0;
+	}
+
+	while(infile4g >> std::hex >> line >> correct){
+		if(greg.bimodal(greg.hex2bi(line), correct, 11)){
+			gottems += 1;
+		}
+		totals += 1;
+	}
+
+	myfile << gottems << "," << totals << ";\n";
+
+	gottems = 0;
+	totals = 0;
+
+	infile4.close();
+	infile4b.close();
+	infile4c.close();
+	infile4d.close();
+	infile4e.close();
+	infile4f.close();
+	infile4g.close();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
