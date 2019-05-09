@@ -146,10 +146,10 @@ bool work::bimodal(string line, string correct, int tS){
 			hit();
 			return true;
 		}else{
-			printf("wrong valuse in dubTable\n");
+			printf("wrong values in dubTable\n");
 		}
 	}
-	printf("bimodal() not working properly\n");
+	cout << "bimodal() not working properly\n" << endl;
 	return false;
 
 }
@@ -238,7 +238,7 @@ bool work::tour(string line, string correct){
 	addone();
 
 	string temp;
-	temp = line.substr(line.size()-11, line.size()); //takes ghrL right most bits
+//	temp = line.substr(line.size()-11, line.size()); //takes ghrL right most bits
 
 	int index;
 /*	for(int i = 0; i < 11; i++){
@@ -356,7 +356,7 @@ string work::hex2bi(string line){
 
 
 
-
+/*
 bool work::EC(string line, string correct){
 	addone();
 
@@ -369,7 +369,7 @@ bool work::EC(string line, string correct){
 			index += (2^(i-1));
 		}
 	}
-*/
+*/ /*
 	string car;
 	for(int i = 0; i < 11; i++){
 		car = line.at(31-i);
@@ -493,3 +493,4 @@ bool work::EC(string line, string correct){
 
 
 }
+*/

@@ -33,7 +33,7 @@ public:
 	bool bimodal(string line, string correct, int tS);
 	bool gShare(string line, string correct, int ghrL);
 	bool tour(string line, string correct);
-//	bool EC(string line, string correct);
+      	bool EC(string line, string correct);
 	string hex2bi(string line);
 
 };
