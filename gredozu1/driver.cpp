@@ -105,7 +105,7 @@ int main(int argc, char *argv[]){
 	}
 
 //	cout << "single bit 5: " << gottems << " + " << totals << endl;
-	myfile << gottems << "," << totals << ";";
+	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
 	totals = 0;
