@@ -36,7 +36,7 @@ int main(int argc, char *argv[]){
 
 	ofstream myfile;
 	myfile.open(output);
-	cout <<"taken: " << gottems << " + " << totals << endl;
+//	cout <<"taken: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << ";\n" ;
 
 	gottems = 0;
@@ -56,7 +56,7 @@ int main(int argc, char *argv[]){
 
 
 
-	cout << "nontaken: " << gottems << " + " << totals << endl;
+//	cout << "nontaken: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << ";\n" ;
 
 	gottems = 0;
@@ -83,7 +83,7 @@ int main(int argc, char *argv[]){
 //	printf("%d", greg.correct);
 
 
-	cout << "single bit 4: " << gottems << " + " << totals << endl;
+//	cout << "single bit 4: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 
@@ -104,7 +104,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "single bit 5: " << gottems << " + " << totals << endl;
+//	cout << "single bit 5: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << ";";
 
 	gottems = 0;
@@ -124,7 +124,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "single bit 7: " << gottems << " + " << totals << endl;
+//	cout << "single bit 7: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -144,7 +144,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "single bit 8: " << gottems << " + " << totals << endl;
+//	cout << "single bit 8: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems =0;
@@ -164,7 +164,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "single bit 9: " << gottems << " + " << totals << endl;
+//	cout << "single bit 9: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -183,7 +183,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout <<"single bit 10: " << gottems << " + " << totals << endl;
+//	cout <<"single bit 10: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -202,7 +202,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "single bit 11: " << gottems << " + " << totals << endl;
+//	cout << "single bit 11: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << ";\n";
 
 	gottems =0;
@@ -259,7 +259,7 @@ int main(int argc, char *argv[]){
 
 
 
-	cout << "bimodal 4: " << gottems << " + " << totals << endl;
+//	cout << "bimodal 4: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -280,7 +280,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "bimodal 5: " << gottems << " + " << totals << endl;
+//	cout << "bimodal 5: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -301,7 +301,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "bimodal 7: " << gottems << " + " << totals << endl;
+//	cout << "bimodal 7: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -321,7 +321,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	myfile << "bimodal 8: " << gottems << "," << totals << "; ";
+	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
 	totals = 0;
@@ -340,7 +340,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "bimodal 9: " << gottems << " + " << totals << endl;
+//	cout << "bimodal 9: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -360,7 +360,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "bimodal 10: " << gottems << " + " << totals << endl;
+//	cout << "bimodal 10: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -380,7 +380,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "bimodal 11: " << gottems << " + " << totals << endl;
+//	cout << "bimodal 11: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << ";\n";
 
 	gottems = 0;
@@ -430,7 +430,7 @@ int main(int argc, char *argv[]){
 		i++;
 */	}
 
-	cout << "gshare 3: " << gottems << " + " << totals << endl;
+//	cout << "gshare 3: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -454,7 +454,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "gshare 4: " << gottems << " + " << totals << endl;
+//	cout << "gshare 4: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems =0;
@@ -477,7 +477,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "gshare 5: " << gottems << " + " << totals << endl;
+//	cout << "gshare 5: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -499,7 +499,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "gshare 6: " << gottems << " + " << totals << endl;
+//	cout << "gshare 6: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems = 0;
@@ -588,7 +588,7 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 	
-	cout << "gshare 10: " << gottems << " + " << totals << endl;
+//	cout << "gshare 10: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << "; ";
 
 	gottems =0;
@@ -611,20 +611,20 @@ int main(int argc, char *argv[]){
 		totals += 1;
 	}
 
-	cout << "gshare 11: " << gottems << " + " << totals << endl;
+//	cout << "gshare 11: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << ";\n";
 
 	gottems = 0;
 	totals = 0;
-	cout << "before closing 5" << endl;
+//	cout << "before closing 5" << endl;
 
 	
 
 
 
-
-
 /*
+
+
 
 	ifstream infile6(input);
 
@@ -638,7 +638,7 @@ int main(int argc, char *argv[]){
 		greg.tTable.push_back(10);
 	}
 
-	cout << "Do we get here?" << endl;
+//	cout << "Do we get here?" << endl;
 	
 	while(infile6 >> std::hex >> line >> correct){
 		if(greg.tour(greg.hex2bi(line), correct)){
@@ -652,7 +652,7 @@ int main(int argc, char *argv[]){
 
 //	cout << "tour: " << gottems << " + " << totals << endl;
 	myfile << gottems << "," << totals << ";";
-	cout << "right before closing output" << endl;
+//	cout << "right before closing output" << endl;
 	myfile.close();
 	exit(0);
 	
