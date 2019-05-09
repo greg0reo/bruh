@@ -618,33 +618,7 @@ int main(int argc, char *argv[]){
 	totals = 0;
 	cout << "before closing 5" << endl;
 
-	infile5.close();
-	cout << "a" << endl;
-	infile5b.close();
-	cout << "b" << endl;
-
-	infile5c.close();
-	cout << "c" << endl;
-
-	infile5d.close();
-	cout << "d" << endl;
-
-	infile5e.close();
-	cout << "e" << endl;
-
-	infile5f.close();
-	cout << "f" << endl;
-
-	infile5g.close();
-	cout << "g" << endl;
-
-	infile5h.close();
-	cout << "h" << endl;
-
-	infile5i.close();
-	cout << "i" << endl;
-
-	cout << "after closing 5" << endl;
+	
 
 
 
@@ -680,6 +654,36 @@ int main(int argc, char *argv[]){
 	myfile << gottems << "," << totals << ";";
 	cout << "right before closing output" << endl;
 	myfile.close();
+	exit(0);
+	
+	
+	infile5.close();
+	cout << "a" << endl;
+	infile5b.close();
+	cout << "b" << endl;
+
+	infile5c.close();
+	cout << "c" << endl;
+
+	infile5d.close();
+	cout << "d" << endl;
+
+	infile5e.close();
+	cout << "e" << endl;
+
+	infile5f.close();
+	cout << "f" << endl;
+
+	infile5g.close();
+	cout << "g" << endl;
+
+	infile5h.close();
+	cout << "h" << endl;
+
+	infile5i.close();
+	cout << "i" << endl;
+
+	cout << "after closing 5" << endl;
 	return 0;
 
 
